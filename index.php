@@ -68,6 +68,16 @@ if(isset($_SESSION['login_user1'])){
 
           <ul class="nav navbar-nav navbar-right">
             <li><a href="#"><span class="glyphicon glyphicon-user"></span> Welcome <?php echo $_SESSION['login_user1']; ?> </a></li>
+            <li><a href="cart.php"><span class="glyphicon glyphicon-shopping-cart"></span> Cart
+              (<?php
+              if(isset($_SESSION["cart"])){
+              $count = count($_SESSION["cart"]); 
+              echo "$count"; 
+            }
+              else
+                echo "0";
+              ?>)
+             </a></li>
             <li><a href="myrestaurant.php">MANAGER CONTROL PANEL</a></li>
             <li><a href="logout_m.php"><span class="glyphicon glyphicon-log-out"></span> Log Out </a></li>
           </ul>
