@@ -59,6 +59,8 @@ session_start();
             <li><a href="index.php">Home</a></li>
             <li class="active"><a href="aboutus.php">About</a></li>
             <li><a href="contactus.php">Contact Us</a></li>
+            <li><a href="foodlist.php"><span class="glyphicon glyphicon-cutlery"></span> Food Zone </a></li>
+
           </ul>
 
 <?php
@@ -78,7 +80,7 @@ else if (isset($_SESSION['login_user2'])) {
   ?>
            <ul class="nav navbar-nav navbar-right">
             <li><a href="#"><span class="glyphicon glyphicon-user"></span> Welcome <?php echo $_SESSION['login_user2']; ?> </a></li>
-            <li><a href="foodlist.php"><span class="glyphicon glyphicon-cutlery"></span> Food Zone </a></li>
+            
             <li><a href="cart.php"><span class="glyphicon glyphicon-shopping-cart"></span> Cart 
             (<?php
               if(isset($_SESSION["cart"])){
@@ -135,10 +137,10 @@ else {
 
             <div class="content">
                 <h3 class="title">what's make our coffee special!</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel rerum laboriosam reprehenderit ipsa id
-                    repellat odio illum, voluptas, necessitatibus assumenda adipisci. Hic, maiores iste? Excepturi illo
-                    dolore mollitia qui quia.</p>
-                <a href="#" class="btn">read more</a>
+                <p>Because we prioritize excellence in every aspect. From our top-notch customer 
+                  service to the unparalleled quality of our products/services, we are dedicated to 
+                  ensuring your satisfaction. With a commitment to innovation and a track record of reliability, 
+                  choosing us means choosing a partner who values your needs and strives for excellence at every turn</p>
                 <div class="icons-container">
                     <div class="icons">
                         <img src="image/about-icon-1.png" alt="">

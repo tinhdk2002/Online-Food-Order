@@ -63,7 +63,7 @@ header("location: customerlogin.php");
             <li><a href="index.php">Home</a></li>
             <li><a href="aboutus.php">About</a></li>
             <li><a href="contactus.php">Contact Us</a></li>
-
+            <li class="active" ><a href="foodlist.php"><span class="glyphicon glyphicon-cutlery"></span> Food Zone </a></li>
           </ul>
 
 <?php
@@ -82,8 +82,7 @@ if(isset($_SESSION['login_user1'])){
 else if (isset($_SESSION['login_user2'])) {
   ?>
            <ul class="nav navbar-nav navbar-right">
-            <li><a href="#"><span class="glyphicon glyphicon-user"></span> Welcome <?php echo $_SESSION['login_user2']; ?> </a></li>
-            <li class="active" ><a href="foodlist.php"><span class="glyphicon glyphicon-cutlery"></span> Food Zone </a></li>
+            <li><a href="#"><span class="glyphicon glyphicon-user"></span> Welcome <?php echo $_SESSION['login_user2']; ?> </a></li> 
             <li><a href="cart.php"><span class="glyphicon glyphicon-shopping-cart"></span> Cart  (<?php
               if(isset($_SESSION["cart"])){
               $count = count($_SESSION["cart"]); 
@@ -175,7 +174,7 @@ else {
 <div class="jumbotron">
   <div class="container text-center">
     <h1>Welcome To Le Cafe'</h1>      
-    <!--p>Let food be thy medicine and medicine be thy food</p-->
+    <p>Let food be thy medicine and medicine be thy food</p>
   </div>
 </div>
 
@@ -206,7 +205,7 @@ if (mysqli_num_rows($result) > 0)
 
 <form method="post" action="cart.php?action=add&id=<?php echo $row["F_ID"]; ?>">
 <div class="mypanel" align="center";>
-<img src="<?php echo $row["images_path"]; ?>" class="img-responsive">
+<img style='height:180px; width:100%' src="<?php echo $row["images_path"]; ?>" class="img-responsive">
 <h4 class="text-dark"><?php echo $row["name"]; ?></h4>
 <h5 class="text-info"><?php echo $row["description"]; ?></h5>
 <h5 class="text-danger">$<?php echo $row["price"]; ?>/-</h5>

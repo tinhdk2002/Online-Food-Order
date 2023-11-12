@@ -56,6 +56,7 @@ session_start();
             <li class="active" ><a href="index.php">Home</a></li>
             <li><a href="aboutus.php">About</a></li>
             <li><a href="contactus.php">Contact Us</a></li>
+            <li><a href="foodlist.php"><span class="glyphicon glyphicon-cutlery"></span> Food Zone </a></li>
 
           </ul>
 
@@ -75,8 +76,7 @@ if(isset($_SESSION['login_user1'])){
 else if (isset($_SESSION['login_user2'])) {
   ?>
            <ul class="nav navbar-nav navbar-right">
-            <li><a href="#"><span class="glyphicon glyphicon-user"></span> Welcome <?php echo $_SESSION['login_user2']; ?> </a></li>
-            <li><a href="foodlist.php"><span class="glyphicon glyphicon-cutlery"></span> Food Zone </a></li>
+            <li><a href="#"><span class="glyphicon glyphicon-user"></span> Welcome <?php echo $_SESSION['login_user2']; ?> </a></li> 
             <li><a href="cart.php"><span class="glyphicon glyphicon-shopping-cart"></span> Cart
               (<?php
               if(isset($_SESSION["cart"])){
@@ -129,7 +129,7 @@ else {
             </div>
 
             <div class="image">
-                <img src="images/LogoImage.jpg" class="main-home-image" alt="">
+                <img style='border-radius: 50px' src="images/LogoImage.jpg"  class="main-home-image" alt="">
             </div>
         </div>
     </section>
@@ -143,8 +143,9 @@ else {
             <a href="#" class="box">
                 <img src="image/menu-1.png" alt="">
                 <div class="content">
-                    <h3>our special coffee</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tenetur, sed.</p>
+                    <h3>our special coffee 1</h3>
+                    <p>
+A delicate cup of coffee, mellow aroma, mild bitterness combined with mellow sweetness. Each drop is an adventure for the taste buds, leaving an indelible mark on the soul.</p>
                     <span>$8.99</span>
                 </div>
             </a>
@@ -152,8 +153,9 @@ else {
             <a href="#" class="box">
                 <img src="image/menu-2.png" alt="">
                 <div class="content">
-                    <h3>our special coffee</h3>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vel, fugit.</p>
+                    <h3>our special coffee 2</h3>
+                    <p>
+A delicate cup of coffee, mellow aroma, mild bitterness combined with mellow sweetness. Each drop is an adventure for the taste buds, leaving an indelible mark on the soul.</p>
                     <span>$8.99</span>
                 </div>
             </a>
@@ -161,8 +163,9 @@ else {
             <a href="#" class="box">
                 <img src="image/menu-3.png" alt="">
                 <div class="content">
-                    <h3>our special coffee</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, recusandae.</p>
+                    <h3>our special coffee 3</h3>
+                    <p>
+A delicate cup of coffee, mellow aroma, mild bitterness combined with mellow sweetness. Each drop is an adventure for the taste buds, leaving an indelible mark on the soul.</p>
                     <span>$8.99</span>
                 </div>
             </a>
@@ -170,8 +173,9 @@ else {
             <a href="#" class="box">
                 <img src="image/menu-4.png" alt="">
                 <div class="content">
-                    <h3>our special coffee</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse, quas.</p>
+                    <h3>our special coffee 4</h3>
+                    <p>
+A delicate cup of coffee, mellow aroma, mild bitterness combined with mellow sweetness. Each drop is an adventure for the taste buds, leaving an indelible mark on the soul.</p>
                     <span>$8.99</span>
                 </div>
             </a>
@@ -179,8 +183,9 @@ else {
             <a href="#" class="box">
                 <img src="image/menu-5.png" alt="">
                 <div class="content">
-                    <h3>our special coffee</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, vitae.</p>
+                    <h3>our special coffee 5</h3>
+                    <p>
+A delicate cup of coffee, mellow aroma, mild bitterness combined with mellow sweetness. Each drop is an adventure for the taste buds, leaving an indelible mark on the soul.</p>
                     <span>$8.99</span>
                 </div>
             </a>
@@ -188,8 +193,9 @@ else {
             <a href="#" class="box">
                 <img src="image/menu-6.png" alt="">
                 <div class="content">
-                    <h3>our special coffee</h3>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Unde, expedita!</p>
+                    <h3>our special coffee 6</h3>
+                    <p>
+A delicate cup of coffee, mellow aroma, mild bitterness combined with mellow sweetness. Each drop is an adventure for the taste buds, leaving an indelible mark on the soul.</p>
                     <span>$8.99</span>
                 </div>
             </a>
@@ -213,10 +219,9 @@ else {
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
                     </div>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo, earum quis dolorem quaerat tenetur
-                        illum.</p>
+                    <p>An exquisite cooking experience! Delicate flavors, perfect ingredient combinations, creating a delicious meal down to every bite.</p>
                     <h3>john deo</h3>
-                    <span>satisfied client</span>
+                    <span> client</span>
                 </div>
 
                 <div class="swiper-slide box">
@@ -230,10 +235,9 @@ else {
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
                     </div>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum optio quasi ut, illo ipsam
-                        assumenda.</p>
-                    <h3>john deo</h3>
-                    <span>satisfied client</span>
+                    <p>Can't believe I found a place with food this good! Every dish is enticing, from the presentation to the taste, it's all perfect.</p>
+                    <h3>penzo duong</h3>
+                    <span>client</span>
                 </div>
 
                 <div class="swiper-slide box">
@@ -247,10 +251,9 @@ else {
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
                     </div>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius asperiores aliquam hic quis!
-                        Eligendi, aliquam.</p>
-                    <h3>john deo</h3>
-                    <span>satisfied client</span>
+                    <p>Here, the food is not just delicious, it's also an art form. Each course is a journey to savoring exceptional flavors.</p>
+                    <h3>kaiser</h3>
+                    <span>client</span>
                 </div>
 
                 <div class="swiper-slide box">
@@ -264,10 +267,10 @@ else {
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
                     </div>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eligendi modi perspiciatis distinctio
-                        velit aliquid a.</p>
-                    <h3>john deo</h3>
-                    <span>satisfied client</span>
+                    <p>Captivating from the first glance to the first taste, the food here is truly a masterpiece. 
+                      If you're a food enthusiast, this is a place you can't miss!</p>
+                    <h3>Tenzi Ngo</h3>
+                    <span>client</span>
                 </div>
             </div>
             <div class="swiper-pagination"></div>

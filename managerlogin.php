@@ -63,6 +63,8 @@ header("location: myrestaurant.php"); //Redirecting to myrestaurant Page
             <li ><a href="index.php">Home</a></li>
             <li><a href="aboutus.php">About</a></li>
             <li><a href="contactus.php">Contact Us</a></li>
+            <li><a href="foodlist.php"><span class="glyphicon glyphicon-cutlery"></span> Food Zone </a></li>
+
           </ul>
 
           <ul class="nav navbar-nav navbar-right">
