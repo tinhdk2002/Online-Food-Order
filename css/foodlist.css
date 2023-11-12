@@ -60,3 +60,8 @@ footer{
 input{
   border: 5px solid white;
 }
+
+.edit{
+  text-shadow: 2px 2px 5px lightcoral;
+  color: crimson;
+}

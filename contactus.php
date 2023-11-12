@@ -8,7 +8,8 @@ session_start();
     <title> Contact | Le Cafe' </title>
   </head>
 
-  <link rel="stylesheet" type = "text/css" href ="css/contactus.css">
+  <link rel="stylesheet" type = "text/css" href ="css/aboutus.css">
+  <link rel="stylesheet" type = "text/css" href ="css/index.css">
   <link rel="stylesheet" type = "text/css" href ="css/bootstrap.min.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
   <script type="text/javascript" src="js/jquery.min.js"></script>
@@ -126,10 +127,8 @@ else {
     </nav>
     <br>
 
-    <div class="heading">
-     <strong>Want to contact <span class="edit"> Le Cafe' </span>?</strong>
-     <br>
-    Here are a few ways to get in touch with us.
+
+    <h1 class="heading">contract us <span>Contact Form</span></h1>
     </div>
 
     <div class="col-xs-12 line"><hr></div>
@@ -139,7 +138,6 @@ else {
       <div class="form-area">
         <form method="post" action="">
         <br style="clear: both">
-          <h3 style="margin-bottom: 25px; text-align: center; font-size: 30px;"> Contact Form</h3>
 
           <div class="form-group">
             <input type="text" class="form-control" id="name" name="name" placeholder="Name" required autofocus="">

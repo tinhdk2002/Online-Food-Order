@@ -15,6 +15,8 @@ header('Location: managerlogin.php');
 
   <link rel="stylesheet" type = "text/css" href ="css/add_food_items.css">
   <link rel="stylesheet" type = "text/css" href ="css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+
   <script type="text/javascript" src="js/jquery.min.js"></script>
   <script type="text/javascript" src="js/bootstrap.min.js"></script>
 
@@ -99,9 +101,12 @@ header('Location: managerlogin.php');
 
     	<div class="list-group">
     		<a href="myrestaurant.php" class="list-group-item ">My Restaurant</a>
+    		<a href="view_food_items.php" class="list-group-item ">View Food Items</a>
     		<a href="add_food_items.php" class="list-group-item active">Add Food Items</a>
     		<a href="edit_food_items.php" class="list-group-item ">Edit Food Items</a>
     		<a href="delete_food_items.php" class="list-group-item ">Delete Food Items</a>
+        <a href="view_order_details.php" class="list-group-item ">View Order Details</a>
+
     	</div>
     </div>
     
@@ -127,7 +132,8 @@ header('Location: managerlogin.php');
           </div>
 
           <div class="form-group">
-            <input type="text" class="form-control" id="images_path" name="images_path" placeholder="Your Food Image Path [images/<filename>.<extention>]" required="">
+          <input type="file" class="form-control" id="images_path" name="images_path" placeholder="Your Food Image Path [images/<filename>.<extention>]" >
+          <!-- <input type="text" class="form-control" id="images_path" name="images_path" placeholder="Your Food Image Path [images/<filename>.<extention>]" required=""> -->
           </div>
 
           <div class="form-group">

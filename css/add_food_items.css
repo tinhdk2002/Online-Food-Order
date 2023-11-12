@@ -46,3 +46,11 @@ footer{
   border: 1px solid GREY;
   opacity:0.9;
 }
+
+.form-control {
+  font-family: 'Muli', sans-serif;;
+  font-size: 15px;
+  height: 50px;
+  border-color: #483c3c;
+  line-height: 35px;
+}

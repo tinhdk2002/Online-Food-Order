@@ -103,6 +103,8 @@ header('Location: managerlogin.php'); // Redirecting To Home Page
     		<a href="add_food_items.php" class="list-group-item ">Add Food Items</a>
     		<a href="edit_food_items.php" class="list-group-item ">Edit Food Items</a>
     		<a href="delete_food_items.php" class="list-group-item ">Delete Food Items</a>
+        <a href="view_order_details.php" class="list-group-item ">View Order Details</a>
+
     	</div>
     </div>
     

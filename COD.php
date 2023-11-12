@@ -17,6 +17,7 @@ unset($_SESSION["cart"]);
 
   <link rel="stylesheet" type = "text/css" href ="css/COD.css">
   <link rel="stylesheet" type = "text/css" href ="css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
   <script type="text/javascript" src="js/jquery.min.js"></script>
   <script type="text/javascript" src="js/bootstrap.min.js"></script>
 

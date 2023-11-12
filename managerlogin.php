@@ -13,7 +13,8 @@ header("location: myrestaurant.php"); //Redirecting to myrestaurant Page
     <title> Manager Login | Le Cafe' </title>
   </head>
 
-  <link rel="stylesheet" type = "text/css" href ="css/managerlogin.css">
+  <link rel="stylesheet" type = "text/css" href ="css/managersignup.css">
+
   <link rel="stylesheet" type = "text/css" href ="css/bootstrap.min.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
   <script type="text/javascript" src="js/jquery.min.js"></script>
@@ -113,7 +114,7 @@ header("location: myrestaurant.php"); //Redirecting to myrestaurant Page
               <input class="form-control" id="username" type="text" name="username" placeholder="Username" required="" autofocus="">
               <span class="input-group-btn">
                 <label class="btn btn-primary"><span class="glyphicon glyphicon-user" aria-hidden="true"></label>
-            </span>
+            </span> 
               </span>
             </div>           
           </div>

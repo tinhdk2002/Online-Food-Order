@@ -12,7 +12,6 @@ $name = $conn->real_escape_string($_POST['name']);
 $price = $conn->real_escape_string($_POST['price']);
 $description = $conn->real_escape_string($_POST['description']);
 
-
 // Storing Session
 $user_check=$_SESSION['login_user1'];
 $R_IDsql = "SELECT RESTAURANTS.R_ID FROM RESTAURANTS, MANAGER WHERE RESTAURANTS.M_ID='$user_check'";
@@ -20,9 +19,28 @@ $R_IDresult = mysqli_query($conn,$R_IDsql);
 $R_IDrs = mysqli_fetch_array($R_IDresult, MYSQLI_BOTH);
 $R_ID = $R_IDrs['R_ID'];
 
+
 $images_path = $conn->real_escape_string($_POST['images_path']);
 
 $query = "INSERT INTO FOOD(name,price,description,R_ID,images_path) VALUES('" . $name . "','" . $price . "','" . $description . "','" . $R_ID ."','" . $images_path . "')";
+
+$targetDirectory = "images/"; // Thay đổi đường dẫn này đến thư mục bạn muốn lưu file
+
+if ($_FILES["images_path"]["error"] == UPLOAD_ERR_OK) {
+  // Di chuyển tệp tin tải lên vào thư mục đích
+  $uploadedFilePath = $targetDirectory . basename($images_path);
+  if (move_uploaded_file($_FILES["images_path"]["tmp_name"], $uploadedFilePath)) {
+      echo json_encode(["status" => "success", "message" => "File đã được tải lên thành công và lưu vào thư mục 'images'."]);
+  } else {
+      echo json_encode(["status" => "error", "message" => "Có lỗi xảy ra khi lưu file."]);
+      // Ghi thông tin lỗi vào log
+      error_log("Error moving file: " . $_FILES["images_path"]["error"]);
+  }
+} else {
+  echo json_encode(["status" => "error", "message" => "Có lỗi khi tải lên file."]);
+  // Ghi thông tin lỗi vào log
+  error_log("Error uploading file: " . $_FILES["images_path"]["error"]);
+}
 $success = $conn->query($query);
 
 if (!$success){

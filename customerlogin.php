@@ -13,7 +13,7 @@ header("location: foodlist.php");
     <title> Guest Login | Le Cafe' </title>
   </head>
 
-  <link rel="stylesheet" type = "text/css" href ="css/managerlogin.css">
+  <link rel="stylesheet" type = "text/css" href ="css/managersignup.css">
   <link rel="stylesheet" type = "text/css" href ="css/bootstrap.min.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
   <script type="text/javascript" src="js/jquery.min.js"></script>

@@ -15,6 +15,8 @@ header("location: customerlogin.php");
   </head>
 
   <link rel="stylesheet" type = "text/css" href ="css/foodlist.css">
+  <link rel="stylesheet" type = "text/css" href ="css/managersignup.css">
+
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
   <script type="text/javascript" src="js/jquery.min.js"></script>
   <script type="text/javascript" src="js/bootstrap.min.js"></script>
@@ -173,7 +175,7 @@ else {
 
 <div class="jumbotron">
   <div class="container text-center">
-    <h1>Welcome To Le Cafe'</h1>      
+    <h1>Welcome To <span class="edit">Le Cafe' </span></h1>      
     <p>Let food be thy medicine and medicine be thy food</p>
   </div>
 </div>
@@ -205,7 +207,7 @@ if (mysqli_num_rows($result) > 0)
 
 <form method="post" action="cart.php?action=add&id=<?php echo $row["F_ID"]; ?>">
 <div class="mypanel" align="center";>
-<img style='height:180px; width:100%' src="<?php echo $row["images_path"]; ?>" class="img-responsive">
+<img style='height:180px; width:100%;' src="images/<?php echo $row["images_path"]; ?>" alt="aimage">
 <h4 class="text-dark"><?php echo $row["name"]; ?></h4>
 <h5 class="text-info"><?php echo $row["description"]; ?></h5>
 <h5 class="text-danger">$<?php echo $row["price"]; ?>/-</h5>
